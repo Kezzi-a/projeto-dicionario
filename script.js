@@ -48,7 +48,7 @@ function carregaDicionario() {
     },
 
     bio04: {
-      nome: "Conceicao Evaristo",
+      nome: "Conceição Evaristo",
 
       imagem: "https://i.postimg.cc/Z9XzNNMS/conceicao-evaristo.png",
 
@@ -81,25 +81,6 @@ function carregaDicionario() {
 
   };
 
-
-  for (var bio in biografias) {
-    console.log(
-      (bio +=
-        " " +
-        "Nome:" + biografias[bio].nome + 
-        " " + 
-        " Minibio: " + 
-        biografias[bio].descricao +
-        " " + 
-        " Citação; " + 
-        biografias[bio].citacao)
-        
-);
-
-     } 
-    }
-
-carregaDicionario();
 
 var content = document.getElementById("content");
 
@@ -138,13 +119,8 @@ var content = document.getElementById("content");
       "</details></div>";
 
   }
-
-
-
-
-
-
-
+}
+carregaDicionario();
 
 
 
